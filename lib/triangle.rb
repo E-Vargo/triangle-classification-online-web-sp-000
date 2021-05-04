@@ -12,8 +12,8 @@ class Triangle
     if @leg1 == 0 || @leg2 == 0 || @hypotenuse == 0
       raise TriangleError
     elsif
-    
-    
+
+
   end
 
  class TriangleError < StandardError
