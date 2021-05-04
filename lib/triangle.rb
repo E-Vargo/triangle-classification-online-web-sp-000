@@ -9,7 +9,7 @@ class Triangle
   end
 
   def kind
-    if @leg1 == 0 || @leg2 == 0 || @leg3 == 0
+    if @leg1 <= 0 || @leg2 <= 0 || @leg3 <= 0
       raise TriangleError
     elsif @leg1 == @leg2 && @leg2 == @leg3
       :equilateral
