@@ -13,6 +13,8 @@ class Triangle
       raise TriangleError
     elsif @leg1 == @leg2 && @leg2 == @hypotenuse
       :equilateral
+    elsif @leg1 == @leg2 && leg2 != @hypotenuse
+      :isosceles
     end
   end
 
