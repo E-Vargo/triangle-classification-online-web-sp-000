@@ -7,7 +7,9 @@ class Triangle
     @leg2 = leg2
     @hypotenuse = hypotenuse
   end
+
  class TriangleError < StandardError
 
  end
+
 end
