@@ -11,6 +11,8 @@ class Triangle
   def kind
     if @leg1 == 0 || @leg2 == 0 || @hypotenuse == 0
       raise TriangleError
+    elsif @leg1 == @leg2 @@ @leg2 == @hypotenuse
+      :equilateral
     end
   end
 
