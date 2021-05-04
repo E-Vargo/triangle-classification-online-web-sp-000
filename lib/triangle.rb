@@ -1,6 +1,6 @@
 class Triangle
   # write code here
-  attr_accessor :leg1, :leg2, :leg3, :type
+  attr_accessor :leg1, :leg2, :leg3
 
   def initialize(leg1, leg2, leg3)
     @leg1 = leg1
