@@ -15,6 +15,8 @@ class Triangle
       :equilateral
     elsif @leg1 == @leg2 && leg2 != @leg3
       :isosceles
+    elsif @leg1 != @leg2 && @leg2 != @leg3 && @leg1 != @leg3
+      :scalene
     end
   end
 
