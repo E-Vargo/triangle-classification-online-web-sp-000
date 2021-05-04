@@ -10,11 +10,7 @@ class Triangle
 
   def kind
     if @leg1 == 0 || @leg2 == 0 || @hypotenuse == 0
-      false
-    elsif
-
-
-  end
+      TriangleError
   end
 
  class TriangleError < StandardError
