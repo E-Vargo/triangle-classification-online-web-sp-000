@@ -17,7 +17,8 @@ class Triangle
       :isosceles
     elsif @leg1 != @leg2 && @leg2 != @leg3 && @leg1 != @leg3
       :scalene
-
+    elsif (@leg1 + @leg2 < @leg3) || (@leg1 + @leg3 < @leg2) || (@leg2 + @leg3 < @leg1)
+      raise TriangleError
     end
   end
 
