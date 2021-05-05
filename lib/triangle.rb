@@ -11,14 +11,14 @@ class Triangle
   def kind
     if @leg1 <= 0 || @leg2 <= 0 || @leg3 <= 0
       raise TriangleError
+    elsif ((@leg1 + @leg2) < @leg3) || ((@leg1 + @leg3) < @leg2) || ((@leg2 + @leg3) < @leg1)
+      raise TriangleError
     elsif @leg1 == @leg2 && @leg2 == @leg3
       :equilateral
     elsif (@leg1 == @leg2 && leg2 != @leg3) || (@leg1 == @leg3 && @leg2 != @leg3) || (@leg2 == @leg3 && @leg1 != @leg3)
       :isosceles
     elsif @leg1 != @leg2 && @leg2 != @leg3 && @leg1 != @leg3
       :scalene
-    elsif ((@leg1 + @leg2) < @leg3) || ((@leg1 + @leg3) < @leg2) || ((@leg2 + @leg3) < @leg1)
-      raise TriangleError
     end
   end
 
