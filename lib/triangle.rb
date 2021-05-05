@@ -23,6 +23,7 @@ class Triangle
   end
 
  class TriangleError < StandardError
+   puts "The selected values do not produce a valid triangle."
  end
 
 end
